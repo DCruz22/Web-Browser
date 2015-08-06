@@ -44,16 +44,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contactenos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contactenos.Designer.cs">
+      <DependentUpon>Contactenos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contactenos.resx">
+      <DependentUpon>Contactenos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +103,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\1438884032_help-browser.ico" />
+    <Content Include="images\1438884046_internet-web-browser.ico" />
+    <Content Include="images\1438884084_icon-navicon-round.ico" />
+    <Content Include="images\1438884131_navigation-left-frame_blue.ico" />
+    <Content Include="images\1438884133_navigation-right-frame_blue.ico" />
+    <Content Include="images\1438884161_ic_refresh_48px.ico" />
+    <Content Include="images\1438884180_home.ico" />
+    <Content Include="images\1438903896_Noun_Project_100Icon_10px_grid-07.ico" />
+    <Content Include="images\1438908486_Remove.ico" />
+    <Content Include="images\1438908538_More.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
