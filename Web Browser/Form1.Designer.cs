@@ -42,9 +42,9 @@
             this.Menú = new System.Windows.Forms.ToolStripMenuItem();
             this.BtnHome = new System.Windows.Forms.ToolStripMenuItem();
             this.BtnInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.BtnHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnContact = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
@@ -65,7 +65,7 @@
             this.Menú});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(989, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(792, 27);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -88,8 +88,8 @@
             // 
             this.direcciónToolStripMenuItem.Enabled = false;
             this.direcciónToolStripMenuItem.Name = "direcciónToolStripMenuItem";
-            this.direcciónToolStripMenuItem.Size = new System.Drawing.Size(72, 23);
-            this.direcciónToolStripMenuItem.Text = "Dirección:";
+            this.direcciónToolStripMenuItem.Size = new System.Drawing.Size(37, 23);
+            this.direcciónToolStripMenuItem.Text = "Url:";
             // 
             // TxtDireccion
             // 
@@ -128,6 +128,7 @@
             // 
             this.BtnAdd.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.Image")));
             this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.BtnAdd.Size = new System.Drawing.Size(152, 22);
             this.BtnAdd.Text = "Añadir";
             this.BtnAdd.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
@@ -137,7 +138,7 @@
             this.BtnClose.Image = ((System.Drawing.Image)(resources.GetObject("BtnClose.Image")));
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.BtnClose.Size = new System.Drawing.Size(152, 22);
+            this.BtnClose.Size = new System.Drawing.Size(130, 22);
             this.BtnClose.Text = "Cerrar";
             this.BtnClose.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
@@ -169,6 +170,20 @@
             this.BtnInfo.ShortcutKeys = System.Windows.Forms.Keys.F12;
             this.BtnInfo.Size = new System.Drawing.Size(152, 22);
             this.BtnInfo.Text = "Info";
+            this.BtnInfo.Click += new System.EventHandler(this.BtnInfo_Click);
+            // 
+            // BtnContact
+            // 
+            this.BtnContact.Image = ((System.Drawing.Image)(resources.GetObject("BtnContact.Image")));
+            this.BtnContact.Name = "BtnContact";
+            this.BtnContact.Size = new System.Drawing.Size(152, 22);
+            this.BtnContact.Text = "Contáctenos";
+            this.BtnContact.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // BtnHelp
             // 
@@ -177,19 +192,7 @@
             this.BtnHelp.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.BtnHelp.Size = new System.Drawing.Size(152, 22);
             this.BtnHelp.Text = "Ayuda";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(138, 6);
-            // 
-            // BtnContact
-            // 
-            this.BtnContact.Image = ((System.Drawing.Image)(resources.GetObject("BtnContact.Image")));
-            this.BtnContact.Name = "BtnContact";
-            this.BtnContact.Size = new System.Drawing.Size(141, 22);
-            this.BtnContact.Text = "Contáctenos";
-            this.BtnContact.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            this.BtnHelp.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // tabControl1
             // 
@@ -197,7 +200,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(989, 562);
+            this.tabControl1.Size = new System.Drawing.Size(792, 493);
             this.tabControl1.TabIndex = 3;
             // 
             // toolStrip1
@@ -222,15 +225,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 589);
+            this.ClientSize = new System.Drawing.Size(792, 520);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.Menu;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "FrmWeb";
-            this.Text = "Browser";
+            this.Text = "Web Browser";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

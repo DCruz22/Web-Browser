@@ -28,5 +28,12 @@ namespace Web_Browser
         {
 
         }
+
+        private void Info_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            this.Parent = null;
+            e.Cancel = true;
+        }
     }
 }

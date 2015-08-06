@@ -118,7 +118,7 @@ namespace Web_Browser
 
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
-
+            Contactenos.GetInstance().Show();
         }
 
         private void toolStripMenuItem7_Click(object sender, EventArgs e)
@@ -184,6 +184,16 @@ namespace Web_Browser
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void BtnInfo_Click(object sender, EventArgs e)
+        {
+            Info.GetInstance().Show();
+        }
+
+        private void BtnHelp_Click(object sender, EventArgs e)
+        {
+            Ayuda.GetInstance().Show();
         }
     }
 }
