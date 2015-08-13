@@ -48,6 +48,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -138,7 +139,7 @@
             this.BtnClose.Image = ((System.Drawing.Image)(resources.GetObject("BtnClose.Image")));
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.BtnClose.Size = new System.Drawing.Size(130, 22);
+            this.BtnClose.Size = new System.Drawing.Size(152, 22);
             this.BtnClose.Text = "Cerrar";
             this.BtnClose.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
@@ -159,7 +160,7 @@
             // 
             this.BtnHome.Image = ((System.Drawing.Image)(resources.GetObject("BtnHome.Image")));
             this.BtnHome.Name = "BtnHome";
-            this.BtnHome.Size = new System.Drawing.Size(152, 22);
+            this.BtnHome.Size = new System.Drawing.Size(141, 22);
             this.BtnHome.Text = "Home";
             this.BtnHome.Click += new System.EventHandler(this.BtnHome_Click);
             // 
@@ -168,7 +169,7 @@
             this.BtnInfo.Image = ((System.Drawing.Image)(resources.GetObject("BtnInfo.Image")));
             this.BtnInfo.Name = "BtnInfo";
             this.BtnInfo.ShortcutKeys = System.Windows.Forms.Keys.F12;
-            this.BtnInfo.Size = new System.Drawing.Size(152, 22);
+            this.BtnInfo.Size = new System.Drawing.Size(141, 22);
             this.BtnInfo.Text = "Info";
             this.BtnInfo.Click += new System.EventHandler(this.BtnInfo_Click);
             // 
@@ -176,21 +177,21 @@
             // 
             this.BtnContact.Image = ((System.Drawing.Image)(resources.GetObject("BtnContact.Image")));
             this.BtnContact.Name = "BtnContact";
-            this.BtnContact.Size = new System.Drawing.Size(152, 22);
+            this.BtnContact.Size = new System.Drawing.Size(141, 22);
             this.BtnContact.Text = "Contáctenos";
             this.BtnContact.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(138, 6);
             // 
             // BtnHelp
             // 
             this.BtnHelp.Image = ((System.Drawing.Image)(resources.GetObject("BtnHelp.Image")));
             this.BtnHelp.Name = "BtnHelp";
             this.BtnHelp.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.BtnHelp.Size = new System.Drawing.Size(152, 22);
+            this.BtnHelp.Size = new System.Drawing.Size(141, 22);
             this.BtnHelp.Text = "Ayuda";
             this.BtnHelp.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
@@ -206,10 +207,11 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar1});
+            this.toolStripProgressBar1,
+            this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 27);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(989, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(792, 25);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.Visible = false;
@@ -220,6 +222,14 @@
             this.toolStripProgressBar1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(250, 22);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(62, 22);
+            this.toolStripLabel1.Text = "Cargando:";
             // 
             // FrmWeb
             // 
@@ -232,7 +242,6 @@
             this.ForeColor = System.Drawing.SystemColors.Menu;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.Name = "FrmWeb";
             this.Text = "Web Browser";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -266,6 +275,7 @@
         private System.Windows.Forms.ToolStripMenuItem BtnContact;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }
 }
 

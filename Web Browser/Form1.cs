@@ -63,6 +63,7 @@ namespace Web_Browser
         void web_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             tabControl1.SelectedTab.Text = ((WebBrowser)tabControl1.SelectedTab.Controls[0]).DocumentTitle;
+            TxtDireccion.Text = ((WebBrowser)tabControl1.SelectedTab.Controls[0]).Url.AbsoluteUri;
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
